@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+*:not(html):not(body) {
+  position: relative;
+}
+body {
+  margin: 0;
+}
