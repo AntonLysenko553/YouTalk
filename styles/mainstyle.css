@@ -24,7 +24,7 @@ header {
 }
 .header__nav {
   width: 50rem;
-  margin-right: 20.3rem;
+  margin-right: 19.35rem;
 }
 .header__links {
   display: flex;
@@ -59,4 +59,14 @@ header {
 }
 .header__button:hover {
   background-color: #BFF3F3;
+}
+main {
+  height: 1905px;
+}
+.main__back-div {
+  height: 672px;
+  background-image: url("../images/backdiv_background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 401px;
 }
