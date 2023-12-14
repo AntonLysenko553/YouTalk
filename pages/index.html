@@ -9,22 +9,39 @@
   </head>
   <body>
     <header>
-      <img class="header__logo" src="../images/logo.svg" alt="логотип YouTalk">
+      <img class="header__logo" src="../images/logo.svg" alt="logo" aria-hidden="true">
       <nav class="header__nav">
         <ul class="header__links">
-          <li>О нас</li>
-          <li>Тарифы</li>
-          <li>Для бизнеса</li>
-          <li>Психологам</li>
-          <li>Сертификат</li>
+          <li><a href="javascript:void(0);">О нас</a></li>
+          <li><a href="javascript:void(0);">Тарифы</a></li>
+          <li><a href="javascript:void(0);">Для бизнеса</a></li>
+          <li><a href="javascript:void(0);">Психологам</a></li>
+          <li><a href="javascript:void(0);">Сертификат</a></li>
           <li class="header__link_special_with-dropdown">Материалы<img class="header__link-image" src="../images/down_arrow.svg" alt="выпадающий список"></li>
-          <li>FAQ</li>
+          <li><a href="javascript:void(0);">FAQ</a></li>
         </ul>
       </nav>
       <button class="header__button" type="button">Подобрать психолога</button>
     </header>
     <main>
       <div class="main__back-div"></div>
+      <div class="main__main-div">
+        <section class="main__top-part">
+          <p class="top-part__bread-crumbs"><span class="top-part__bread-left"><a class="top-part__bread-link" href="javascript:void(0);">Главная</a><img src="../images/right_arrow.svg" alt="right_arrow" aria-hidden="true"></span>Блог</p>
+          <h1 class="top-part__heading">Блог</h1>
+          <ul class="top-part__categories-list">
+            <li class="top-part__list-item_special_with-icon"><img class="list-item__image_special_elevated" src="../images/smile.svg" alt="smile" aria-hidden="true">Все</li>
+            <li>Самооценка и самопринятие</li>
+            <li class="top-part__list-item_special_with-icon"><img src="../images/unicorn.svg" alt="unicorn" aria-hidden="true">Self</li>
+            <li>Чувства и эмоции</li>
+            <li>Тревога</li>
+            <li>Упражнения</li>
+            <li>Психология питания</li>
+            <li>Насилие</li>
+            <li>Личное здоровье</li>
+          </ul>
+        </section>
+      </div>
     </main>
   </body>
 </html>
