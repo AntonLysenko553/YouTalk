@@ -158,7 +158,29 @@ main {
   grid-column: 1 / 5;
   grid-row: 1;
 }
-.main__middle-part img {
+.middle-part__category {
+  position: absolute;
+  display: flex;
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  color: #333333;
+  background-color: #FFFFFFB3;
+  border: 1px solid #C1C5CD;
+  border-radius: 24px;
+  z-index: 2;
+  gap: 4px;
+  top: 8px;
+  left: 8px;
+  padding: 6px 8px;
+}
+.middle-part__category img {
+  width: 18px;
+  height: 18px;
+}
+.lower {
+  top: 48px;
+}
+.main__middle-part img:not(.middle-part__category img) {
   height: 260px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
