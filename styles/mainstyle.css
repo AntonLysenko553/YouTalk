@@ -144,3 +144,122 @@ main {
 .top-part__categories-list li:nth-child(3) {
   border: 2px solid #16C8BB;
 }
+.main__middle-part {
+  display: grid;
+  grid-template: 499px 475px 475px / 240px 240px 24px 240.5px 24px 240.5px 24px 240px 240px;
+  row-gap: 24px;
+}
+.main__middle-part article, .main__middle-part span {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.middle-part__eggs-burnout {
+  grid-column: 1 / 5;
+  grid-row: 1;
+}
+.main__middle-part img {
+  height: 260px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.main__middle-part div {
+  background-color: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding: 16px;
+}
+.middle-part__card-info_size_big {
+  height: 239px;
+}
+.card-info__wrapper_big-gap {
+  gap: 89px;
+}
+.middle-part__card-info_size_big > span > span, .middle-part__card-info_size_small > span > span {
+  gap: 11px;
+}
+.middle-part__card-info_size_big > span > span > span, .middle-part__card-info_size_small > span > span > span {
+  gap: 4px;
+}
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+.card-info__author, .card-info__date {
+  font-family: "Montserrat-Regular";
+  font-size: 12px;
+  letter-spacing: 0.25px;
+}
+.dark-grey {
+  color: #494949;
+}
+.card-info__description {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+.light-grey {
+  color: #868686;
+}
+.middle-part__run-fears {
+  grid-column: 6 / 10;
+  grid-row: 1;
+}
+.card-info__wrapper_superbig-gap {
+  gap: 95px;
+}
+.middle-part__girl-burnout {
+  grid-column: span 2;
+  grid-row: 2;
+}
+.middle-part__card-info_size_small {
+  height: 216px;
+}
+.card-info__wrapper_supersmall-gap {
+  gap: 18px;
+}
+.middle-part__swim-fears {
+  grid-column: 4 / 7;
+  grid-row: 2;
+}
+.card-info__wrapper_small-gap {
+  gap: 24px;
+}
+.middle-part__emotions-smile {
+  grid-column: 8 / span 2;
+  grid-row: 2;
+}
+.card-info__wrapper_middle-gap {
+  gap: 70px;
+}
+.middle-part__woman-burnout {
+  grid-column: span 2;
+  grid-row: 3;
+}
+.middle-part__woman-fears {
+  grid-column: 4 / 7;
+  grid-row: 3;
+}
+.middle-part__emotions-men {
+  grid-column: 8 / span 2;
+  grid-row: 3;
+}
+.main__bottom-part {
+  display: flex;
+  width: 1513px;
+  justify-content: center;
+  margin: 56px 0px 96px 0px;
+}
+.main__button {
+  font-family: "Montserrat-Bold";
+  font-size: 16px;
+  background-color: #35B3A9;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 70px;
+}
