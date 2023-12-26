@@ -1,0 +1,336 @@
+@media (max-width: 1802px) {
+  header, .main__main-div {
+    padding: 0px 9.05vw 0px 9.05vw;
+  }
+  footer {
+    padding: 40px 9.05vw 17px 9.05vw;
+  }
+}
+@media (max-width: 1757px) {
+  header, .main__main-div {
+    padding: 0px 8.05vw 0px 8.05vw;
+  }
+  footer {
+    padding: 40px 8.05vw 17px 8.05vw;
+  }
+}
+@media (max-width: 1715px) {
+  header, .main__main-div {
+    padding: 0px 7.05vw 0px 7.05vw;
+  }
+  footer {
+    padding: 40px 7.05vw 17px 7.05vw;
+  }
+}
+@media (max-width: 1674px) {
+  header, .main__main-div {
+    padding: 0px 6.05vw 0px 6.05vw;
+  }
+  footer {
+    padding: 40px 6.05vw 17px 6.05vw;
+  }
+}
+@media (max-width: 1635px) {
+  header, .main__main-div {
+    padding: 0px 5.05vw 0px 5.05vw;
+  }
+  footer {
+    padding: 40px 5.05vw 17px 5.05vw;
+  }
+}
+@media (max-width: 1598px) {
+  header, .main__main-div {
+    padding: 0px 4.05vw 0px 4.05vw;
+  }
+  footer {
+    padding: 40px 4.05vw 17px 4.05vw;
+  }
+}
+@media (max-width: 1563px) {
+  header, .main__main-div {
+    padding: 0px 3.05vw 0px 3.05vw;
+  }
+  footer {
+    padding: 40px 3.05vw 17px 3.05vw;
+  }
+}
+@media (max-width: 1529px) {
+  header, .main__main-div {
+    padding: 0px 2.05vw 0px 2.05vw;
+  }
+  footer {
+    padding: 40px 2.05vw 17px 2.05vw;
+  }
+}
+@media (max-width: 1522px) {
+  .footer__bottom-part {
+    width: 563px;
+  }
+}
+@media (max-width: 1497px) {
+  header, .main__main-div {
+    padding: 0px 1.7vw 0px 1.7vw;
+  }
+  footer {
+    padding: 40px 2vw 17px 2vw;
+  }
+}
+@media (max-width: 1482px) {
+  .card-info__wrapper_big-gap {
+    row-gap: 65px;
+  }
+}
+@media (max-width: 1480px) {
+  .card-info__wrapper_middle-gap {
+    row-gap: 48px;
+  }
+}
+@media (max-width: 1457px) {
+  .card-info__wrapper_middle-gap {
+    row-gap: 22px;
+  }
+}
+@media (max-width: 1416px) {
+  main, .main__main-div {
+    height: 1921px;
+  }
+  .main__middle-part {
+    grid-template: 499px 476px 492px / auto auto 24px auto 24px auto 24px auto auto;
+  }
+  article:nth-last-child(-n+3) a {
+    height: 492px;
+  }
+  .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 14px;
+  }
+  .card-info__orig-author {
+    width: 139px;
+  }
+  .card-info__editorial {
+    width: 177px;
+  }
+}
+@media (min-width: 1305px) and (max-width: 1416px) {
+  article:nth-last-child(-n+3) .middle-part__card-info_size_small {
+    height: 232px;
+  }
+  .middle-part__woman-fears .card-info__wrapper_small-gap, .middle-part__emotions-men .card-info__wrapper_middle-gap {
+    row-gap: 38px;
+  }
+}
+@media (max-width: 1304px) {
+  main, .main__main-div {
+    height: 1961px;
+  }
+  .main__middle-part {
+    grid-template: 499px 496px 512px / auto auto 24px auto 24px auto 24px auto auto;
+  }
+  article:nth-last-child(-n+3) a {
+    height: 512px;
+  }
+  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 16px;
+  }
+}
+@media (min-width: 1271px) and (max-width: 1304px) {
+  article:nth-child(-n+5):not(:nth-child(-n+2)) a {
+    height: 496px;
+  }
+  article:nth-child(-n+5):not(:nth-child(-n+2)) .middle-part__card-info_size_small {
+    height: 236px;
+  }
+  article:nth-last-child(-n+3) .middle-part__card-info_size_small {
+    height: 252px;
+  }
+  .middle-part__swim-fears .card-info__wrapper_small-gap, .middle-part__emotions-smile .card-info__wrapper_middle-gap {
+    row-gap: 42px;
+  }
+  .middle-part__woman-fears .card-info__wrapper_small-gap, .middle-part__emotions-men .card-info__wrapper_middle-gap {
+    row-gap: 58px;
+  }
+}
+@media (max-width: 1287px) {
+  .header__button {
+    white-space: nowrap;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1270px) {
+  main, .main__main-div {
+    height: 1871px;
+  }
+  .main__back-div {
+    display: none;
+  }
+  .main__main-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__middle-part {
+    width: 960px;
+    grid-template: 499px 459px 459px / 148px 148px 32px 148px 24px 148px 16px 148px 148px;
+    align-self: center;
+  }
+  article:not(:nth-child(-n+2)) {
+    width: 304px;
+  }
+  article:nth-child(5), article:last-child {
+    margin-left: -8px;
+  }
+  article:not(:nth-child(-n+2)) a {
+    height: 459px;
+  }
+  .main__middle-part article:not(:nth-child(-n+2)) a > img {
+    height: 206px;
+  }
+  .middle-part__card-info_size_small {
+    height: 253px;
+  }
+  article:not(:nth-child(-n+2)) div {
+    padding: 17px 16px 16px 16px;
+  }
+  .middle-part__girl-burnout .card-info__description {
+    height: 40px;
+    overflow: hidden;
+  }
+  .middle-part__girl-burnout .card-info__description::after {
+    content: "...";
+    position: absolute;
+    right: 34px;
+    top: 21px;
+  }
+  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 26px;
+  }
+  .card-info__wrapper_big-gap {
+    row-gap: 39px;
+  }
+  .card-info__wrapper_superbig-gap {
+    row-gap: 45px;
+  }
+  .card-info__wrapper_small-gap {
+    row-gap: 12px;
+  }
+  .card-info__wrapper_middle-gap {
+    row-gap: 38px;
+  }
+  .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 26px;
+  }
+  .middle-part__girl-burnout h2, .middle-part__woman-burnout h2 {
+    width: 272px;
+  }
+  .middle-part__swim-fears h2, .middle-part__woman-fears h2 {
+    width: 245px;
+  }
+  .main__middle-part .card-info__editorial, .main__middle-part .card-info__editorial + span {
+    display: none;
+  }
+  .middle-part__woman-burnout .card-info__description {
+    height: 40px;
+    overflow: hidden;
+  }
+  .middle-part__woman-burnout .card-info__description::after {
+    content: "...";
+    position: absolute;
+    right: 34px;
+    top: 21px;
+  }
+}
+@media (max-width: 1245px) {
+  header {
+    width: 1024px;
+    border-bottom: unset;
+    box-shadow: unset;
+    padding: 0px 32px;
+    margin: 0 auto;
+  }
+  .header__logo-nav {
+    gap: 32px;
+    width: unset;
+    justify-content: unset;
+  }
+  .header__nav {
+    width: 627px;
+  }
+  body > hr {
+    display: block;
+  }
+  main {
+    margin: 0 auto;
+  }
+  main, .main__main-div {
+    width: 1024px;
+    height: 1866px;
+  }
+  .main__main-div {
+    align-items: center;
+    padding: 0px 32px;
+  }
+  .main__top-part {
+    display: flex;
+    width: 960px;
+    height: 258px;
+    flex-direction: column;
+    align-self: center;
+  }
+  .top-part__heading {
+    margin: 40px 0px 32px 0px;
+  }
+  .top-part__categories-list {
+    width: 934px;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-self: center;
+    justify-content: unset;
+    margin-left: -26px;
+  }
+  .main__bottom-part {
+    margin: 35px 0px 60px 0px;
+  }
+  .main__button {
+    width: 182px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px 17px 0px;
+  }
+  .footer__main-part, .footer__nav-social {
+    width: 960px;
+  }
+  .footer__main-part {
+    margin: 0 auto;
+  }
+  footer nav {
+    margin-left: 8px;
+  }
+  .footer__nav-links {
+    grid-template: repeat(5, 24px) / 110.5px 30px 106.5px;
+  }
+  .footer__social {
+    margin-right: -6px;
+  }
+  .footer__form {
+    margin-right: -45px;
+  }
+  footer hr {
+    width: 960px;
+    margin: 24px auto 16px auto;
+  }
+  .footer__bottom-part {
+    width: 960px;
+    column-gap: 48px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1038px) {
+  header, .main__main-div {
+    width: 1009px;
+    padding: 0px 24.5px;
+  }
+  main {
+    width: 1009px;
+  }
+}
