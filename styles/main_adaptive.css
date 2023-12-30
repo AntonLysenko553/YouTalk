@@ -1,65 +1,65 @@
-@media (max-width: 1802px) {
+@media (max-width: 1816px) {
   header, .main__main-div {
-    padding: 0px 9.05vw 0px 9.05vw;
+    padding: 0px 163px 0px 163px;
   }
   footer {
-    padding: 40px 9.05vw 17px 9.05vw;
+    padding: 40px 163px 17px 163px;
   }
 }
 @media (max-width: 1757px) {
   header, .main__main-div {
-    padding: 0px 8.05vw 0px 8.05vw;
+    padding: 0px 141px 0px 141px;
   }
   footer {
-    padding: 40px 8.05vw 17px 8.05vw;
+    padding: 40px 141px 17px 141px;
   }
 }
 @media (max-width: 1715px) {
   header, .main__main-div {
-    padding: 0px 7.05vw 0px 7.05vw;
+    padding: 0px 121px 0px 121px;
   }
   footer {
-    padding: 40px 7.05vw 17px 7.05vw;
+    padding: 40px 121px 17px 121px;
   }
 }
 @media (max-width: 1674px) {
   header, .main__main-div {
-    padding: 0px 6.05vw 0px 6.05vw;
+    padding: 0px 101px 0px 101px;
   }
   footer {
-    padding: 40px 6.05vw 17px 6.05vw;
+    padding: 40px 101px 17px 101px;
   }
 }
 @media (max-width: 1635px) {
   header, .main__main-div {
-    padding: 0px 5.05vw 0px 5.05vw;
+    padding: 0px 82px 0px 82px;
   }
   footer {
-    padding: 40px 5.05vw 17px 5.05vw;
+    padding: 40px 82px 17px 82px;
   }
 }
 @media (max-width: 1598px) {
   header, .main__main-div {
-    padding: 0px 4.05vw 0px 4.05vw;
+    padding: 0px 64px 0px 64px;
   }
   footer {
-    padding: 40px 4.05vw 17px 4.05vw;
+    padding: 40px 64px 17px 64px;
   }
 }
 @media (max-width: 1563px) {
   header, .main__main-div {
-    padding: 0px 3.05vw 0px 3.05vw;
+    padding: 0px 47px 0px 47px;
   }
   footer {
-    padding: 40px 3.05vw 17px 3.05vw;
+    padding: 40px 47px 17px 47px;
   }
 }
 @media (max-width: 1529px) {
   header, .main__main-div {
-    padding: 0px 2.05vw 0px 2.05vw;
+    padding: 0px 31px 0px 31px;
   }
   footer {
-    padding: 40px 2.05vw 17px 2.05vw;
+    padding: 40px 31px 17px 31px;
   }
 }
 @media (max-width: 1522px) {
@@ -69,10 +69,10 @@
 }
 @media (max-width: 1497px) {
   header, .main__main-div {
-    padding: 0px 1.7vw 0px 1.7vw;
+    padding: 0px 25px 0px 25px;
   }
   footer {
-    padding: 40px 2vw 17px 2vw;
+    padding: 40px 30px 17px 30px;
   }
 }
 @media (max-width: 1482px) {
@@ -80,7 +80,7 @@
     row-gap: 65px;
   }
 }
-@media (max-width: 1480px) {
+@media (max-width: 1479px) {
   .card-info__wrapper_middle-gap {
     row-gap: 48px;
   }
@@ -90,15 +90,12 @@
     row-gap: 22px;
   }
 }
-@media (max-width: 1416px) {
+@media (max-width: 1418px) {
   main, .main__main-div {
     height: 1921px;
   }
   .main__middle-part {
     grid-template: 499px 476px 492px / auto auto 24px auto 24px auto 24px auto auto;
-  }
-  article:nth-last-child(-n+3) a {
-    height: 492px;
   }
   .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
     row-gap: 14px;
@@ -110,7 +107,7 @@
     width: 177px;
   }
 }
-@media (min-width: 1305px) and (max-width: 1416px) {
+@media (min-width: 1310px) and (max-width: 1418px) {
   article:nth-last-child(-n+3) .middle-part__card-info_size_small {
     height: 232px;
   }
@@ -118,21 +115,18 @@
     row-gap: 38px;
   }
 }
-@media (max-width: 1304px) {
+@media (max-width: 1309px) {
   main, .main__main-div {
     height: 1961px;
   }
   .main__middle-part {
     grid-template: 499px 496px 512px / auto auto 24px auto 24px auto 24px auto auto;
   }
-  article:nth-last-child(-n+3) a {
-    height: 512px;
-  }
-  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
-    row-gap: 16px;
+  .footer__form {
+    margin-left: -30px;
   }
 }
-@media (min-width: 1271px) and (max-width: 1304px) {
+@media (min-width: 1271px) and (max-width: 1309px) {
   article:nth-child(-n+5):not(:nth-child(-n+2)) a {
     height: 496px;
   }
@@ -167,7 +161,6 @@
     flex-direction: column;
   }
   .main__middle-part {
-    width: 960px;
     grid-template: 499px 459px 459px / 148px 148px 32px 148px 24px 148px 16px 148px 148px;
     align-self: center;
   }
@@ -177,14 +170,8 @@
   article:nth-child(5), article:last-child {
     margin-left: -8px;
   }
-  article:not(:nth-child(-n+2)) a {
-    height: 459px;
-  }
   .main__middle-part article:not(:nth-child(-n+2)) a > img {
     height: 206px;
-  }
-  .middle-part__card-info_size_small {
-    height: 253px;
   }
   article:not(:nth-child(-n+2)) div {
     padding: 17px 16px 16px 16px;
@@ -193,13 +180,13 @@
     height: 40px;
     overflow: hidden;
   }
-  .middle-part__girl-burnout .card-info__description::after {
+  .middle-part__girl-burnout .card-info__description::after, .middle-part__woman-burnout .card-info__description::after {
     content: "...";
     position: absolute;
     right: 34px;
     top: 21px;
   }
-  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
+  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap, .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
     row-gap: 26px;
   }
   .card-info__wrapper_big-gap {
@@ -214,9 +201,6 @@
   .card-info__wrapper_middle-gap {
     row-gap: 38px;
   }
-  .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
-    row-gap: 26px;
-  }
   .middle-part__girl-burnout h2, .middle-part__woman-burnout h2 {
     width: 272px;
   }
@@ -230,25 +214,19 @@
     height: 40px;
     overflow: hidden;
   }
-  .middle-part__woman-burnout .card-info__description::after {
-    content: "...";
-    position: absolute;
-    right: 34px;
-    top: 21px;
-  }
 }
 @media (max-width: 1245px) {
   header {
     width: 1024px;
-    border-bottom: unset;
-    box-shadow: unset;
+    border-bottom: medium none currentColor;
+    box-shadow: none;
     padding: 0px 32px;
     margin: 0 auto;
   }
   .header__logo-nav {
     gap: 32px;
-    width: unset;
-    justify-content: unset;
+    width: auto;
+    justify-content: normal;
   }
   .header__nav {
     width: 627px;
@@ -268,10 +246,8 @@
     padding: 0px 32px;
   }
   .main__top-part {
-    display: flex;
     width: 960px;
     height: 258px;
-    flex-direction: column;
     align-self: center;
   }
   .top-part__heading {
@@ -281,9 +257,7 @@
     width: 934px;
     flex-wrap: wrap;
     gap: 8px;
-    align-self: center;
-    justify-content: unset;
-    margin-left: -26px;
+    justify-content: normal;
   }
   .main__bottom-part {
     margin: 35px 0px 60px 0px;
@@ -297,23 +271,20 @@
     align-items: center;
     padding: 40px 0px 17px 0px;
   }
-  .footer__main-part, .footer__nav-social {
+  .footer__main-part {
     width: 960px;
   }
   .footer__main-part {
     margin: 0 auto;
   }
   footer nav {
-    margin-left: 8px;
+    margin-left: 6px;
   }
   .footer__nav-links {
     grid-template: repeat(5, 24px) / 110.5px 30px 106.5px;
   }
-  .footer__social {
-    margin-right: -6px;
-  }
   .footer__form {
-    margin-right: -45px;
+    margin-left: 0;
   }
   footer hr {
     width: 960px;
@@ -332,5 +303,149 @@
   }
   main {
     width: 1009px;
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    justify-content: space-between;
+    padding: 0px 31px 0px 20px;
+    width: auto;
+    margin: 0;
+  }
+  .header__nav, .header__button {
+    display: none;
+  }
+  header > img {
+    display: block;
+  }
+  main, .main__top-part, .top-part__categories-list {
+    width: auto;
+  }
+  main, .main__main-div {
+    height: 3025px;
+  }
+  .main__main-div {
+    width: auto;
+    padding: 0px 20px;
+  }
+  .top-part__heading {
+    margin: 40px 0px 32px 1px;
+  }
+  .main__middle-part {
+    grid-template: 600px 594px 447px 447px 447px / 352px 24px 352px;
+  }
+  .middle-part__eggs-burnout {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+  article:not(:nth-child(-n+2)) {
+    width: auto;
+  }
+  .main__middle-part img:not(.middle-part__category img) {
+    height: 404px;
+  }
+  .card-info__wrapper_big-gap, .card-info__wrapper_superbig-gap {
+    row-gap: 42px;
+  }
+  .middle-part__run-fears {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+  .middle-part__girl-burnout {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap, .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 14px;
+  }
+  .middle-part__girl-burnout h2, .middle-part__woman-burnout h2 {
+    width: auto;
+  }
+  .middle-part__girl-burnout .card-info__description::after, .middle-part__woman-burnout .card-info__description::after {
+    right: 13px;
+  }
+  .middle-part__swim-fears {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .card-info__wrapper_small-gap {
+    row-gap: 26px;
+  }
+  .middle-part__swim-fears h2, .middle-part__woman-fears h2 {
+    width: auto;
+  }
+  br {
+    display: block;
+  }
+  .middle-part__emotions-smile {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  article:nth-child(5), article:last-child {
+    margin-left: 0;
+  }
+  .card-info__wrapper_middle-gap {
+    row-gap: 46px;
+  }
+  .middle-part__woman-burnout {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .middle-part__woman-fears {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .middle-part__emotions-men {
+    grid-column: 3;
+    grid-row: 5;
+  }
+  .main__bottom-part {
+    margin: 33px 0px 55px 0px;
+  }
+  footer {
+    height: 306px;
+    padding: 35px 20px 23px 20px;
+  }
+  .footer__main-part {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  footer nav {
+    width: 247px;
+    margin-left: 0;
+  }
+  footer hr {
+    width: 100%;
+    margin: 27px 0px 16px 0px;
+  }
+  .footer__bottom-part {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    height: 455px;
+  }
+  .footer__main-part {
+    height: 333px;
+    row-gap: 26px;
+    column-gap: 31px;
+    justify-content: normal;
+  }
+}
+@media (max-width: 782px) {
+  header {
+    padding: 0px 23.5px 0px 12.5px;
+  }
+  main {
+    width: 753px;
+  }
+  .main__main-div {
+    width: 753px;
+    padding: 0px 12.5px;
+  }
+  .footer__main-part {
+    column-gap: 16px;
   }
 }
