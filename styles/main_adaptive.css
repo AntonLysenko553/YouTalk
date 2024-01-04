@@ -1,3 +1,8 @@
+@media (hover: none) and (pointer: coarse) {
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
 @media (max-width: 1816px) {
   header, .main__main-div {
     padding: 0px 163px 0px 163px;
@@ -247,7 +252,6 @@
   }
   .main__top-part {
     width: 960px;
-    height: 258px;
     align-self: center;
   }
   .top-part__heading {
@@ -298,10 +302,9 @@
 }
 @media (max-width: 1038px) {
   header, .main__main-div {
-    width: 1009px;
     padding: 0px 24.5px;
   }
-  main {
+  header, main, .main__main-div {
     width: 1009px;
   }
 }
@@ -318,14 +321,13 @@
   header > img {
     display: block;
   }
-  main, .main__top-part, .top-part__categories-list {
+  main, .main__top-part, .top-part__categories-list, .main__main-div {
     width: auto;
   }
   main, .main__main-div {
     height: 3025px;
   }
   .main__main-div {
-    width: auto;
     padding: 0px 20px;
   }
   .top-part__heading {
@@ -340,9 +342,6 @@
   }
   article:not(:nth-child(-n+2)) {
     width: auto;
-  }
-  .main__middle-part img:not(.middle-part__category img) {
-    height: 404px;
   }
   .card-info__wrapper_big-gap, .card-info__wrapper_superbig-gap {
     row-gap: 42px;
@@ -423,6 +422,11 @@
     width: 100%;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__middle-part img:not(.middle-part__category img) {
+    height: 404px;
+  }
+}
 @media (max-width: 1000px) {
   footer {
     height: 455px;
@@ -438,14 +442,156 @@
   header {
     padding: 0px 23.5px 0px 12.5px;
   }
-  main {
+  main, .main__main-div {
     width: 753px;
   }
   .main__main-div {
-    width: 753px;
     padding: 0px 12.5px;
   }
   .footer__main-part {
     column-gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    height: 72px;
+    padding: 0px 35px 0px 24px;
+  }
+  .header__logo-nav img {
+    width: 48px;
+    height: 34px;
+  }
+  main, .main__main-div {
+    width: auto;
+    height: 2229px;
+  }
+  .main__main-div {
+    padding: 0px 20px;
+    align-items: normal;
+  }
+  .main__top-part {
+    padding: 16px 0px 16px 0px;
+    align-self: auto;
+  }
+  .top-part__bread-crumbs {
+    margin-left: 0;
+  }
+  .main__top-part > div {
+    height: 36px;
+    overflow: hidden;
+  }
+  .main__top-part > div > div {
+    height: 56px;
+    overflow-x: scroll;
+  }
+  .top-part__heading {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 32px 0px 24px 0px;
+  }
+  .top-part__categories-list {
+    width: 1181px;
+    padding-top: 2px;
+    margin: 0px 1px 0px 1px;
+    flex-wrap: nowrap;
+  }
+  .main__middle-part {
+    display: flex;
+    width: 374px;
+    flex-direction: column;
+    row-gap: 16px;
+    grid-template: none;
+  }
+  article:nth-last-child(-n+4) {
+    display: none;
+  }
+  article a img {
+    height: 206px;
+  }
+  .card-info__wrapper_big-gap {
+    row-gap: 40px;
+  }
+  .card-info__wrapper_superbig-gap {
+    row-gap: 46px;
+  }
+  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 39px;
+  }
+  .middle-part__girl-burnout .card-info__description {
+    height: auto;
+    overflow: visible;
+  }
+  .middle-part__girl-burnout .card-info__description::after {
+    content: "";
+  }
+  .card-info__wrapper_small-gap {
+    row-gap: 45px;
+  }
+  .main__bottom-part {
+    margin: 28px 0px 59px 0px;
+  }
+  footer {
+    height: 654px;
+  }
+  .footer__main-part {
+    width: 375px;
+    height: 532px;
+    align-content: flex-start;
+    row-gap: normal;
+  }
+  footer nav {
+    height: 184px;
+    margin-bottom: 23px;
+    width: auto;
+  }
+  .footer__nav-links {
+    grid-template: repeat(5, 24px) / 110.5px 158px 106.5px;
+  }
+  .footer__form {
+    width: 375px;
+    height: 192px;
+    margin-bottom: 31px;
+    row-gap: normal;
+  }
+  label {
+    margin-bottom: 8px;
+  }
+  .form__underlay {
+    margin-bottom: 12px;
+  }
+  .form__underlay, .form__surface {
+    width: 375px;
+  }
+  .form__input {
+    width: 314px;
+  }
+  .form__button {
+    padding: 10.3px 17.5px;
+  }
+  .footer__social {
+    height: 102px;
+  }
+}
+@media (max-width: 610px) {
+  footer {
+    height: 736px;
+  }
+  footer hr {
+    border-bottom: 1px solid #9D9D9D;
+    margin: 20px 0px 20px 0px;
+  }
+  .footer__bottom-part {
+    flex-direction: column;
+  }
+  .footer__bottom-part p {
+    margin-bottom: 24px;
+  }
+  .footer__bottom-part a:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 414px) and (max-width: 414px) {
+  .main__top-part > div {
+    width: 391px;
   }
 }
