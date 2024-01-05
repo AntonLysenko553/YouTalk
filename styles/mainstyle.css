@@ -408,11 +408,13 @@ footer {
   margin-left: -120px;
 }
 label {
-  width: 350px;
   font-family: "Montserrat-Bold";
   font-size: 18px;
   line-height: 26px;
   color: #FFFFFF;
+}
+label br {
+  display: none;
 }
 .form__underlay {
   display: flex;

@@ -178,9 +178,6 @@
   .main__middle-part article:not(:nth-child(-n+2)) a > img {
     height: 206px;
   }
-  article:not(:nth-child(-n+2)) div {
-    padding: 17px 16px 16px 16px;
-  }
   .middle-part__girl-burnout .card-info__description {
     height: 40px;
     overflow: hidden;
@@ -218,6 +215,11 @@
   .middle-part__woman-burnout .card-info__description {
     height: 40px;
     overflow: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 1270px) {
+  article:not(:nth-child(-n+2)) div {
+    padding: 17px 16px 16px 16px;
   }
 }
 @media (max-width: 1245px) {
@@ -548,7 +550,6 @@
     grid-template: repeat(5, 24px) / 110.5px 158px 106.5px;
   }
   .footer__form {
-    width: 375px;
     height: 192px;
     margin-bottom: 31px;
     row-gap: normal;
@@ -593,5 +594,87 @@
 @media (min-width: 414px) and (max-width: 414px) {
   .main__top-part > div {
     width: 391px;
+  }
+}
+@media (max-width: 413px) {
+  header {
+    height: 56px;
+    padding: 0px 19px 0px 16px;
+  }
+  .main__top-part {
+    padding: 24px 0px 24px 0px;
+  }
+  .top-part__heading {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 24px 0px 24px 0px;
+  }
+  main, .main__main-div {
+    height: 2305px;
+  }
+  .main__main-div {
+    padding: 0px 16px;
+  }
+  .main__middle-part {
+    width: 288px;
+  }
+  .middle-part__eggs-burnout .card-info__description, .middle-part__girl-burnout .card-info__description {
+    height: 60px;
+    overflow: hidden;
+  }
+  .middle-part__eggs-burnout .card-info__description::after, .middle-part__girl-burnout .card-info__description::after {
+    content: "...";
+    position: absolute;
+    top: auto;
+    right: 51px;
+    bottom: -1px;
+  }
+  .card-info__wrapper_big-gap, .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 8px;
+  }
+  .card-info__wrapper_superbig-gap, .card-info__wrapper_small-gap {
+    row-gap: 18px;
+  }
+  footer {
+    height: 724px;
+    padding: 35px 14px 37px 18px;
+  }
+  .footer__main-part {
+    width: 100%;
+    height: 506px;
+  }
+  footer nav {
+    margin: 0px auto 23px auto;
+  } 
+  .footer__nav-links {
+    grid-template: repeat(5, 24px) / 110.5px 71px 106.5px;
+  }
+  .footer__form {
+    margin-bottom: 5px;
+  }
+  .form__underlay, .form__surface, .form__input {
+    width: 288px;
+  }
+  .form__button {
+    display: none;
+  }
+}
+@media (max-width: 342px) {
+  footer {
+    height: 750px;
+  }
+  .footer__main-part {
+    height: 532px;
+  }
+  .footer__form {
+    height: 218px;
+  }
+  .form__surface {
+    top: 85px;
+  }
+}
+@media (max-width: 320px) {
+  label br {
+    display: block;
   }
 }
