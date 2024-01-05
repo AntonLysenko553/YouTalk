@@ -87,6 +87,9 @@ header {
   cursor: pointer;
   margin-top: 2px;
 }
+header > a {
+  margin-left: auto;
+}
 .header__button {
   width: 230px;
   height: 48px;
@@ -98,7 +101,6 @@ header {
   border-radius: 4px;
   cursor: pointer;
   padding: 14px 20px;
-  margin-left: auto;
 }
 header > img {
   display: none;

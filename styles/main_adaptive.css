@@ -149,9 +149,11 @@
   }
 }
 @media (max-width: 1287px) {
+  header > a {
+    margin-left: 20px;
+  }
   .header__button {
     white-space: nowrap;
-    margin-left: 20px;
   }
 }
 @media (max-width: 1270px) {
@@ -317,7 +319,7 @@
     width: auto;
     margin: 0;
   }
-  .header__nav, .header__button {
+  .header__nav, header a {
     display: none;
   }
   header > img {
