@@ -3,6 +3,65 @@
     text-decoration: underline;
   }
 }
+@media (min-width: 1913px) and (max-width: 2560px) {
+  .header__logo-nav {
+    width: 1100px;
+  }
+  main, .main__main-div {
+    height: 2454px;
+  }
+  .main__middle-part {
+    grid-template: 700px 650px 650px / auto auto 24px auto 24px auto 24px auto auto;
+  }
+  article a img {
+    height: 400px;
+  }
+  .card-info__wrapper_superbig-gap {
+    row-gap: 172px;
+  }
+  .card-info__wrapper_supersmall-gap {
+    row-gap: 96px;
+  }
+  .card-info__wrapper_small-gap, .card-info__wrapper_middle-gap {
+    row-gap: 102px;
+  }
+}
+@media ((min-width: 2282px) and (max-width: 2560px)) or ((min-width: 1998px) and (max-width: 2039px)) or ((min-width: 2098px) and (max-width: 2223px)) {
+  .card-info__wrapper_big-gap {
+    row-gap: 172px;
+  }
+}
+@media (min-width: 1913px) and (max-width: 2522px) {
+  .card-info__wrapper_supersmall-gap {
+    row-gap: 76px;
+  }
+}
+@media (min-width: 1913px) and (max-width: 2451px) {
+  .card-info__wrapper_superbig-gap {
+    row-gap: 152px;
+  }
+}
+@media ((min-width: 2224px) and (max-width: 2281px)) or ((min-width: 2040px) and (max-width: 2097px)) or ((min-width: 1913px) and (max-width: 1997px)) {
+  .card-info__wrapper_big-gap {
+    row-gap: 146px;
+  }
+}
+@media (min-width: 1913px) and (max-width: 2223px) {
+  header, .main__main-div {
+    padding: 0px 100px 0px 100px;
+  }
+  footer {
+    padding: 40px 100px 17px 100px;
+  }
+}
+@media (min-width: 1913px) and (max-width: 2039px) {
+  header, .main__main-div {
+    padding: 0px 50px 0px 50px;
+  }
+  footer {
+    padding: 40px 50px 17px 50px;
+  }
+}
 @media (max-width: 1816px) {
   header, .main__main-div {
     padding: 0px 163px 0px 163px;
@@ -489,8 +548,7 @@
     overflow-x: scroll;
   }
   .top-part__heading {
-    font-size: 32px;
-    line-height: 40px;
+    font: 32px/40px "Montserrat-Bold";
     margin: 32px 0px 24px 0px;
   }
   .top-part__categories-list {
@@ -606,16 +664,18 @@
   .main__top-part {
     padding: 24px 0px 24px 0px;
   }
+  .top-part__bread-crumbs {
+    margin-left: 1px;
+  }
   .top-part__heading {
-    font-size: 24px;
-    line-height: 32px;
-    margin: 24px 0px 24px 0px;
+    font: 24px/32px "Montserrat-Bold";
+    margin: 24px 0px 24px 1px;
   }
   main, .main__main-div {
     height: 2305px;
   }
   .main__main-div {
-    padding: 0px 16px;
+    padding: 0px 16px 0px 15px;
   }
   .main__middle-part {
     width: 288px;
@@ -678,5 +738,10 @@
 @media (max-width: 320px) {
   label br {
     display: block;
+  }
+}
+@media (min-width: 320px) and (max-width: 320px) {
+  .main__top-part > div {
+    width: 304px;
   }
 }

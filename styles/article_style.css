@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Montserrat-Regular";
+  src: local("Montserrat"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+}
+@font-face {
   font-family: "Montserrat-Medium";
   src: local("Montserrat"), url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2");
 }
@@ -6,13 +10,24 @@
   font-family: "Montserrat-Bold";
   src: local("Montserrat"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local("Montserrat"), url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: local("OpenSans"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
 }
 *:not(html):not(body) {
   position: relative;
 }
-body, ul {
+body {
+  overflow-x: hidden;
+}
+body, figure, ul, h1, h3, h4, p, hr {
   margin: 0;
   padding: 0;
 }
@@ -40,9 +55,7 @@ header {
 .header__links a, .header__links li {
   text-decoration: none;
   color: #333333;
-  font-family: "Montserrat-Medium";
-  font-size: 14px;
-  line-height: 114%;
+  font: 14px/114% "Montserrat-Medium";
   letter-spacing: 0.25px;
 }
 .header__links li:first-child {
@@ -80,8 +93,7 @@ header > a {
 .header__button {
   width: 230px;
   height: 48px;
-  font-family: "Montserrat-Bold";
-  font-size: 16px;
+  font: 16px "Montserrat-Bold";
   color: #03B2A5;
   background-color: #E3F5F5;
   border: none;
@@ -94,8 +106,259 @@ header > img {
   display: none;
   cursor: pointer;
 }
+main {
+  display: flex;
+  padding: 0px 192px;
+}
+.main__main-div {
+  width: 1229px;
+  padding: 16px 245px 0px 0px;
+}
+aside {
+  height: 3019px;
+  padding-top: 88px;
+}
+.aside__window-load {
+  height: 516px;
+  background-color: #E6F0FD;
+  border-radius: 16px;
+  padding: 24px;
+}
+.aside__window-load img {
+  width: 234px;
+  height: 206px;
+  margin-bottom: 27px;
+}
+.aside__window-load h3 {
+  font: 18px/24px "Montserrat-Bold";
+  color: #333333;
+  text-align: center;
+  margin-bottom: 11px;
+}
+.aside__window-load p {
+  font: 14px/20px "Montserrat-Regular";
+  color: #333333;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.aside__window-load button {
+  background-color: #35B3A9;
+  border: none;
+  border-radius: 4px;
+  font: 16px/24px "Montserrat-Bold";
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 67.5px;
+}
+.aside__psychologist {
+  height: 484px;
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+  padding: 24px 16px 36px 16px;
+  margin: 24px 0px 28px 0px;
+}
+.psychologist__chat {
+  position: absolute;
+  display: flex;
+  height: 24px;
+  font: 12px/18px "Montserrat-Medium";
+  letter-spacing: 0.25px;
+  color: #333333;
+  background-color: #F3F4F8B3;
+  border-radius: 6px;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 6px;
+  left: 16px;
+}
+.size_big {
+  width: 105px;
+  top: 16px;
+}
+.aside__psychologist > p img {
+  height: 16px;
+}
+.size_small {
+  width: 74px;
+  top: 48px;
+}
+figure {
+  margin-bottom: 4px;
+}
+figure img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0px auto 16px auto;
+}
+figcaption {
+  font: 20px/28px "Montserrat-Bold";
+  color: #333333;
+  text-align: center;
+}
+figure h4 {
+  font: 16px/24px "Montserrat-SemiBold";
+  color: #333333;
+  text-align: center;
+}
+.aside__psychologist > div p {
+  font: 14px/20px "Montserrat-Medium";
+  color: #A2A7B1;
+}
+.aside__psychologist div {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.psychologist__dividing-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #A2A7B1;
+}
+.aside__psychologist hr {
+  border-top: 2px solid #FFFFFF;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  box-shadow: 0px 2px #DEDEDE;
+  margin: 16px 0px;
+}
+.aside__psychologist h3 {
+  font: 16px/24px "Montserrat-Bold";
+  color: #333333;
+}
+.aside__psychologist ul {
+  list-style: none;
+  list-style-image: url("../images/list_marker.svg");
+  padding-inline-start: 20px;
+  margin: 8px 0px 20px 0px;
+}
+.aside__psychologist ul li {
+  font: 14px/20px "Montserrat-Regular";
+  color: #333333;
+  text-indent: 4px;
+}
+.aside__psychologist ul li:nth-child(2) {
+  margin: 8px 0px;
+}
+.aside__psychologist button {
+  background-color: #35B3A9;
+  border: none;
+  border-radius: 4px;
+  font: 16px/24px "Montserrat-Bold";
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 75.5px;
+}
+.aside__care {
+  height: 292px;
+  border-radius: 16px;
+  background-color: #2963A3;
+  background-image: url("../images/confetti.png");
+  background-repeat: no-repeat;
+  background-size: 100% 66%;
+  overflow: hidden;
+}
+.aside__care p {
+  font: 32px/40px "Montserrat-Bold";
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 60px;
+}
+.aside__care img:nth-child(2) {
+  position: absolute;
+  width: 112px;
+  height: 146px;
+  transform: rotate(90deg);
+  z-index: 1;
+  bottom: -17px;
+  left: 8px;
+}
+.aside__care img:nth-child(3) {
+  position: absolute;
+  width: 167px;
+  height: 159px;
+  bottom: -19px;
+  left: 104px;
+}
+.aside__care img:last-child {
+  position: absolute;
+  width: 79px;
+  height: 120px;
+  transform: rotate(-90deg);
+  z-index: 1;
+  right: 10px;
+  bottom: -23px;
+}
+.aside__video-sessions {
+  display: flex;
+  height: 306px;
+  flex-direction: column;
+  border: 1px solid #DEDEDE;
+  border-radius: 24px;
+  box-shadow: 0px 30px 50px #EFF5FB;
+  row-gap: 16px;
+  overflow: hidden;
+  padding: 32px 0px 32px 32px;
+  margin: 42px 0px 633px 0px;
+}
+.aside__video-sessions h3 {
+  font: 18px/26px "Montserrat-Bold";
+  color: #2963A3;
+}
+.aside__video-sessions h3 span {
+  font: 24px/32px "Montserrat-Bold";
+}
+.aside__video-sessions p {
+  font: 14px/20px "OpenSans-Regular";
+  color: #011632;
+}
+.aside__video-sessions > span {
+  font: 24px/32px "Montserrat-Bold";
+  color: #333333;
+}
+.aside__video-sessions button {
+  width: 108px;
+  border: none;
+  border-radius: 4px;
+  background-color: #35B3A9;
+  font: 16px/24px "Montserrat-Bold";
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 12px 23px;
+}
+.aside__video-sessions img:nth-last-child(2) {
+  position: absolute;
+  width: 112px;
+  height: 125px;
+  object-fit: cover;
+  bottom: -21px;
+  right: 2px;
+}
+.aside__video-sessions img:last-child {
+  position: absolute;
+  width: 137px;
+  height: 121px;
+  object-fit: contain;
+  z-index: 1;
+  right: -51px;
+  bottom: -47px;
+}
+aside > img {
+  position: absolute;
+  right: -650px;
+  bottom: 0px;
+}
 @media (hover: hover) and (pointer: fine) {
   .header__button:hover {
     background-color: #BFF3F3;
+  }
+  .aside__window-load button:hover, .aside__psychologist button:hover, .aside__video-sessions button:hover {
+    background-color: #44D8CC;
   }
 }
