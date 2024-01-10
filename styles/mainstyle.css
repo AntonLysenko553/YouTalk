@@ -392,6 +392,7 @@ footer {
   margin-left: -120px;
 }
 label {
+  width: 350px;
   font: 18px/26px "Montserrat-Bold";
   color: #FFFFFF;
 }
