@@ -16,7 +16,7 @@
 }
 * {
   box-sizing: border-box;
-  transition: width 0.25s, height 0.25s, row-gap 0.25s, grid-template 0.25s, gap 0.25s;
+  transition: width 0.25s, height 0.25s, grid-template 0.25s;
 }
 *:not(html):not(body) {
   position: relative;
@@ -34,7 +34,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #EFF5FB;
   box-shadow: inset 0px -2px #EFF2F2;
-  padding: 0px 192px 0px 192px;
+  padding: 0px 192px;
 }
 .header__logo-nav {
   display: flex;
@@ -60,22 +60,19 @@ header {
   width: 43px;
 }
 .header__links li:nth-child(2) {
-  width: 60px;
+  width: 58px;
 }
 .header__links li:nth-child(3) {
   width: 97px;
 }
-.header__links li:nth-child(4) {
-  width: 92px;
-}
-.header__links li:nth-child(5) {
-  width: 103px;
+.header__links li:nth-child(4), .header__links li:nth-child(5) {
+  width: 90px;
 }
 .header__links li:nth-child(6) {
-  width: 105px;
+  width: 109px;
 }
 .header__links li:last-child {
-  width: 31px;
+  width: 30px;
 }
 .header__link_special_with-dropdown {
   display: flex;
@@ -126,7 +123,7 @@ main {
 .main__main-div {
   height: 1905px;
   z-index: 1;
-  padding: 0px 192px 0px 192px;
+  padding: 0px 192px;
 }
 .main__top-part {
   padding: 16px 0px 24px 0px;

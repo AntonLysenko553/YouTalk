@@ -24,6 +24,7 @@
 }
 * {
   box-sizing: border-box;
+  transition: width 0.25s, height 0.25s, grid-template 0.25s;
 }
 *:not(html):not(body) {
   position: relative;
@@ -61,7 +62,7 @@ header {
   height: 76px;
   align-items: center;
   border-bottom: 1px solid #EFF5FB;
-  padding: 0px 192px 0px 192px;
+  padding: 0px 192px;
 }
 .header__logo-nav {
   display: flex;
@@ -87,22 +88,19 @@ header {
   width: 43px;
 }
 .header__links li:nth-child(2) {
-  width: 60px;
+  width: 58px;
 }
 .header__links li:nth-child(3) {
   width: 97px;
 }
-.header__links li:nth-child(4) {
-  width: 92px;
-}
-.header__links li:nth-child(5) {
-  width: 103px;
+.header__links li:nth-child(4), .header__links li:nth-child(5) {
+  width: 90px;
 }
 .header__links li:nth-child(6) {
-  width: 105px;
+  width: 109px;
 }
 .header__links li:last-child {
-  width: 31px;
+  width: 30px;
 }
 .header__link_special_with-dropdown {
   display: flex;
@@ -131,15 +129,21 @@ header > img {
   display: none;
   cursor: pointer;
 }
+body > hr {
+  display: none;
+  border-top: 1px solid #EFF5FB;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  opacity: 0.5;
+}
 main {
   display: flex;
-  width: 1897px;
-  flex-wrap: wrap;
   padding: 0px 192px;
 }
 .main__main-div {
-  width: 1229px;
-  padding: 16px 245px 0px 0px;
+  width: 690px;
+  padding-top: 16px;
 }
 .main__top-part {
   height: 631px;
@@ -180,10 +184,23 @@ main {
   position: relative;
   display: flex;
   width: 4px;
-  top: -23px;
-  right: -150px;
-  margin-left: 10px;
   justify-content: center;
+  top: -23px;
+  right: -160px;
+}
+.top-part__author-date p:last-child {
+  display: none;
+  color: #2963A3;
+}
+.top-part__author-date p:last-child::before {
+  content: ".";
+  position: absolute;
+  display: flex;
+  width: 4px;
+  color: #494949;
+  justify-content: center;
+  top: -3px;
+  left: -11px;
 }
 .main__top-part > img {
   width: 690px;
@@ -239,11 +256,12 @@ main {
   width: 690px;
   border-radius: 16px;
   background-color: #F3F7FE;
-  padding: 34px 42px 24px 24px;
+  padding: 34px 23px 24px 24px;
 }
 .article-content__specialist-statement img {
   position: absolute;
   top: 24px;
+  left: 23px;
 }
 .article-content__specialist-statement p:nth-child(2) {
   font: 16px/24px "Montserrat-Italic";
@@ -288,6 +306,7 @@ main figcaption {
 }
 .article-content__statement-repeat img {
   position: absolute;
+  width: 240px;
   top: 0px;
   right: 225.5px;
 }
@@ -376,65 +395,11 @@ ul + .article-content__image-advice img {
 .article-content__categories-links p {
   top: -3px;
 }
-main > hr {
-  width: 100%;
-  border-top: 2px solid #DEDEDE;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
-  opacity: 0.5;
-  margin: 48px 0px 72px 0px;
-}
-main > section {
-  display: flex;
-  column-gap: 352px;
-  padding: 0px 64px 26px 0px;
-}
-.main__psychologist-suggestion {
-  width: 335px;
-}
-.main__psychologist-suggestion h1 {
-  font: 48px/56px "Montserrat-Bold";
-}
-.main__psychologist-suggestion p {
-  font: 18px/26px "Montserrat-Regular";
-  margin: 24px 0px 32px 0px;
-}
-.main__psychologist-suggestion a {
-  display: block;
-  height: 60px;
-}
-.main__psychologist-suggestion button {
-  width: 238px;
-  border: none;
-  border-radius: 4px;
-  background-color: #16C8BB;
-  font: 16px "Montserrat-Bold";
-  cursor: pointer;
-  padding: 20px 24px;
-}
-main > section img {
-  width: 520px;
-  height: 330px;
-}
-.main__lower-outer {
-  width: 242px;
-}
-.main__lower-outer img {
-  position: absolute;
-  right: -385px;
-}
-.body__footer-above {
-  position: absolute;
-  width: 100%;
-  height: 384px;
-  background-image: url("../images/backdiv_background.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
 aside {
+  max-width: 282px;
   height: 3019px;
   padding-top: 88px;
+  margin-left: auto;
 }
 .aside__window-load {
   height: 516px;
@@ -456,7 +421,7 @@ aside {
   text-align: center;
   margin-bottom: 24px;
 }
-aside a {
+.aside__window-load a, .aside__psychologist a {
   display: block;
   height: 48px;
 }
@@ -472,6 +437,7 @@ aside a {
   height: 484px;
   border: 1px solid #DEDEDE;
   border-radius: 16px;
+  box-shadow: 0px 30px 50px #EFF5FB;
   padding: 24px 16px 36px 16px;
   margin: 24px 0px 28px 0px;
 }
@@ -622,6 +588,9 @@ figure h4 {
   font: 14px/20px "OpenSans-Regular";
   color: #011632;
 }
+.aside__video-sessions a {
+  width: 108px;
+}
 .aside__video-sessions button {
   width: 108px;
   border: none;
@@ -635,8 +604,8 @@ figure h4 {
   width: 112px;
   height: 125px;
   object-fit: cover;
-  bottom: -21px;
   right: 2px;
+  bottom: -21px;
 }
 .aside__video-sessions img:last-child {
   position: absolute;
@@ -648,9 +617,63 @@ figure h4 {
   bottom: -47px;
 }
 aside > img {
+  right: -260px;
+}
+.body__under-main {
+  padding: 0px 192px 26px 192px;
+}
+.body__under-main hr {
+  width: 100%;
+  border-top: 2px solid #DEDEDE;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  opacity: 0.5;
+  margin: 48px 0px 72px 0px;
+}
+.body__under-main div:nth-child(2) {
+  display: flex;
+}
+.body__under-main div:nth-child(2) > div {
+  display: flex;
+  width: 1171px;
+  justify-content: space-between;
+}
+.body__psychologist-suggestion h1 {
+  font: 48px/56px "Montserrat-Bold";
+}
+.body__psychologist-suggestion p {
+  font: 18px/26px "Montserrat-Regular";
+  margin: 24px 0px 32px 0px;
+}
+.body__psychologist-suggestion a {
+  display: block;
+  height: 60px;
+}
+.body__psychologist-suggestion button {
+  width: 238px;
+  border: none;
+  border-radius: 4px;
+  background-color: #16C8BB;
+  font: 16px "Montserrat-Bold";
+  cursor: pointer;
+  padding: 20px 24px;
+}
+.body__psychologist-suggestion + img {
+  width: 520px;
+  height: 330px;
+}
+.body__under-main div:nth-child(2) > img {
+  margin-left: auto;
+  right: -385px;
+}
+.body__footer-above {
   position: absolute;
-  right: -650px;
-  bottom: 0px;
+  width: 100%;
+  height: 384px;
+  background-image: url("../images/backdiv_background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 footer {
   height: 302px;
@@ -701,7 +724,6 @@ footer {
   height: 170px;
   flex-direction: column;
   row-gap: 8px;
-  margin-left: -120px;
 }
 label {
   width: 350px;
@@ -808,7 +830,7 @@ footer hr {
   .header__button:hover {
     background-color: #BFF3F3;
   }
-  .aside__window-load button:hover, .aside__psychologist button:hover, .aside__video-sessions button:hover, .main__psychologist-suggestion button:hover {
+  .aside__window-load button:hover, .aside__psychologist button:hover, .aside__video-sessions button:hover, .body__psychologist-suggestion button:hover {
     background-color: #44D8CC;
   }
   .form__button:hover {

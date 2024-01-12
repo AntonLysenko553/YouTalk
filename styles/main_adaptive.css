@@ -1,4 +1,20 @@
 @media (hover: none) and (pointer: coarse) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
   .form__law, .form__pp {
     text-decoration: underline;
   }
@@ -48,7 +64,7 @@
 }
 @media (min-width: 1913px) and (max-width: 2223px) {
   header, .main__main-div {
-    padding: 0px 100px 0px 100px;
+    padding: 0px 100px;
   }
   footer {
     padding: 40px 100px 17px 100px;
@@ -56,7 +72,7 @@
 }
 @media (min-width: 1913px) and (max-width: 2039px) {
   header, .main__main-div {
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px;
   }
   footer {
     padding: 40px 50px 17px 50px;
@@ -64,15 +80,15 @@
 }
 @media (max-width: 1816px) {
   header, .main__main-div {
-    padding: 0px 163px 0px 163px;
+    padding: 0px 163px;
   }
   footer {
     padding: 40px 163px 17px 163px;
   }
 }
-@media (max-width: 1757px) {
+@media (max-width: 1758px) {
   header, .main__main-div {
-    padding: 0px 141px 0px 141px;
+    padding: 0px 141px;
   }
   footer {
     padding: 40px 141px 17px 141px;
@@ -80,50 +96,57 @@
 }
 @media (max-width: 1715px) {
   header, .main__main-div {
-    padding: 0px 121px 0px 121px;
+    padding: 0px 120px;
   }
   footer {
-    padding: 40px 121px 17px 121px;
+    padding: 40px 120px 17px 120px;
   }
 }
-@media (max-width: 1674px) {
-  header, .main__main-div {
-    padding: 0px 101px 0px 101px;
-  }
-  footer {
-    padding: 40px 101px 17px 101px;
+@media (max-width: 1672px) {
+  .card-info__wrapper_big-gap {
+    row-gap: 65px;
   }
 }
-@media (max-width: 1635px) {
-  header, .main__main-div {
-    padding: 0px 82px 0px 82px;
-  }
-  footer {
-    padding: 40px 82px 17px 82px;
+@media (max-width: 1669px) {
+  .card-info__wrapper_middle-gap {
+    row-gap: 48px;
   }
 }
-@media (max-width: 1598px) {
-  header, .main__main-div {
-    padding: 0px 64px 0px 64px;
-  }
-  footer {
-    padding: 40px 64px 17px 64px;
+@media (max-width: 1647px) {
+  .card-info__wrapper_middle-gap {
+    row-gap: 22px;
   }
 }
-@media (max-width: 1563px) {
-  header, .main__main-div {
-    padding: 0px 47px 0px 47px;
+@media (max-width: 1608px) {
+  .middle-part__woman-burnout .card-info__description {
+    height: 20px;
+    overflow: hidden;
   }
-  footer {
-    padding: 40px 47px 17px 47px;
+  .middle-part__woman-burnout .card-info__description::after {
+    content: "...";
+    position: relative;
+    right: -95px;
+    top: -19px;
   }
 }
-@media (max-width: 1529px) {
-  header, .main__main-div {
-    padding: 0px 31px 0px 31px;
+@media(min-width: 1440px) and (max-width: 1608px) {
+  .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 18px;
   }
-  footer {
-    padding: 40px 31px 17px 31px;
+}
+@media (max-width: 1558px) {
+  .middle-part__woman-burnout .card-info__description {
+    max-width: 373px;
+  }
+  .middle-part__woman-burnout .card-info__description::after {
+    position: absolute;
+    right: -1px;
+    top: 1px;
+  }
+}
+@media (max-width: 1522px) {
+  .middle-part__woman-burnout .card-info__description {
+    max-width: 283px;
   }
 }
 @media (max-width: 1522px) {
@@ -131,27 +154,53 @@
     width: 563px;
   }
 }
-@media (max-width: 1497px) {
+@media (max-width: 1499px) {
+  .middle-part__girl-burnout .card-info__description {
+    height: 40px;
+    overflow: hidden;
+  }
+  .middle-part__girl-burnout .card-info__description::after {
+    content: "...";
+    position: relative;
+    right: -211px;
+    top: -19px
+  }
+}
+@media (min-width: 1441px) and (max-width: 1483px) {
+  header > a {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1459px) {
   header, .main__main-div {
-    padding: 0px 25px 0px 25px;
+    padding: 0px 110px;
   }
   footer {
-    padding: 40px 30px 17px 30px;
+    padding: 40px 110px 17px 110px;
   }
 }
-@media (max-width: 1482px) {
-  .card-info__wrapper_big-gap {
-    row-gap: 65px;
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .header__logo-nav {
+    width: 725px;
+  }
+  .header__nav {
+    width: 620px;
   }
 }
-@media (max-width: 1479px) {
-  .card-info__wrapper_middle-gap {
-    row-gap: 48px;
+@media (max-width: 1439px) {
+  header, .main__main-div {
+    padding: 0px 25px;
   }
-}
-@media (max-width: 1457px) {
-  .card-info__wrapper_middle-gap {
-    row-gap: 22px;
+  .middle-part__woman-burnout .card-info__description {
+    max-width: none;
+    height: auto;
+    overflow: visible;
+  }
+  .middle-part__woman-burnout .card-info__description::after {
+    content: normal;
+  }
+  footer {
+    padding: 40px 25px 17px 25px;
   }
 }
 @media (max-width: 1418px) {
@@ -207,12 +256,9 @@
     row-gap: 58px;
   }
 }
-@media (max-width: 1287px) {
+@media (max-width: 1293px) {
   header > a {
     margin-left: 20px;
-  }
-  .header__button {
-    white-space: nowrap;
   }
 }
 @media (max-width: 1270px) {
@@ -239,16 +285,6 @@
   .main__middle-part article:not(:nth-child(-n+2)) a > img {
     height: 206px;
   }
-  .middle-part__girl-burnout .card-info__description {
-    height: 40px;
-    overflow: hidden;
-  }
-  .middle-part__girl-burnout .card-info__description::after, .middle-part__woman-burnout .card-info__description::after {
-    content: "...";
-    position: absolute;
-    right: 34px;
-    top: 21px;
-  }
   .middle-part__girl-burnout .card-info__wrapper_supersmall-gap, .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
     row-gap: 26px;
   }
@@ -272,10 +308,6 @@
   }
   .main__middle-part .card-info__editorial, .main__middle-part .card-info__editorial + span {
     display: none;
-  }
-  .middle-part__woman-burnout .card-info__description {
-    height: 40px;
-    overflow: hidden;
   }
 }
 @media (min-width: 768px) and (max-width: 1270px) {
@@ -719,6 +751,11 @@
   }
   .form__button {
     display: none;
+  }
+}
+@media (max-width: 385px) {
+  label {
+    width: auto;
   }
 }
 @media (max-width: 342px) {
