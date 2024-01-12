@@ -216,11 +216,11 @@ main {
   margin: 16px 0px 24px 0px;
 }
 .main__contents > ul > li {
-  text-indent: 20px;
   text-decoration: underline;
   background-image: url("../images/list_marker.svg");
   background-repeat: no-repeat;
   background-position: left center;
+  padding-left: 20px;
 }
 .main__contents .contents__second-list-item_marker-position_top {
   background: none;
@@ -229,7 +229,7 @@ main {
 .main__contents .contents__second-list-item_marker-position_top::before {
   content: url("../images/list_marker.svg");
   position: absolute;
-  left: -20px;
+  left: 0px;
 }
 .main__contents .contents__double-subtitle, .main__contents .contents__triple-subtitle, .main__contents .contents__quadruple-subtitle {
   list-style: none;
@@ -314,7 +314,7 @@ main figcaption {
   display: flex;
   column-gap: 24px;
 }
-.article-content__image-advice img {
+p + .article-content__image-advice img {
   width: 282px;
   height: 380px;
 }
@@ -336,7 +336,7 @@ ul + .article-content__image-advice img {
 }
 .article-content__two-images-advices {
   display: grid;
-  grid-template: 235px 192px / repeat(2, 333px);
+  grid-template: 235px 192px / 333px 333px;
   gap: 24px;
 }
 .article-content__two-images-advices img {
