@@ -110,6 +110,14 @@
   .top-part__author-date p:last-child {
     display: block;
   }
+  .main__contents > ul > li {
+    background: none;
+  }
+  .main__contents > ul > li::before {
+    content: url("../images/list_marker.svg");
+    position: absolute;
+    left: 0px;
+  }
   .main__contents > ul > li:first-child {
     margin-bottom: 8px;
   }
@@ -308,9 +316,6 @@
     padding: 24px 52.5px 36px 52.5px;
     margin: 0;
   }
-  .aside__psychologist ul li:nth-child(2) {
-    margin: 8px 0px;
-  }
   .aside__psychologist button {
     padding: 12px 75px;
   }
@@ -397,11 +402,15 @@
   header {
     padding: 0px 35px 0px 24px;
   }
+  .header__logo-nav > img {
+    width: 48px;
+    height: 34px;
+  }
   main {
     width: 414px;
     padding: 0px 20px;
   }
-  .main__main-div, .main__top-part > img, .article-content__specialist-statement, .article-content__men-image, .article-content__statement-repeat, .article-content__excercise {
+  .main__main-div, .main__top-part > img, .article-content__specialist-statement, .article-content__men-image, .article-content__statement-repeat, .article-content__excercise, p + .article-content__image-advice img, ul + .article-content__image-advice img, .article-content__two-images-advices img, .article-content__hrs-lightning, .aside__window-load, .aside__psychologist, .footer__main-part, .footer__form, .form__underlay, .form__surface {
     width: 374px;
   }
   .main__main-div {
@@ -477,14 +486,10 @@
     flex-wrap: wrap;
     row-gap: 16px;
   }
-  p + .article-content__image-advice img {
-    width: 374px;
-  }
   .article-content__excercise {
     padding: 16px;
   }
   ul + .article-content__image-advice img {
-    width: 374px;
     height: 207px;
   }
   .article-content__two-images-advices {
@@ -493,14 +498,10 @@
     row-gap: normal;
   }
   .article-content__two-images-advices img {
-    width: 374px;
     margin-bottom: 16px;
   }
   .article-content__two-images-advices p:nth-child(2) {
     margin-bottom: 24px;
-  }
-  .article-content__hrs-lightning {
-    width: 374px;
   }
   .article-content__excercise.teal {
     margin-bottom: 56px;
@@ -511,12 +512,10 @@
     row-gap: 24px;
   }
   .aside__window-load {
-    width: 374px;
     height: 509px;
     padding: 24px 32px 44px 32px;
   }
   .aside__psychologist {
-    width: 374px;
     height: 484px;
     padding: 24px 62px 36px 62px;
   }
@@ -559,9 +558,9 @@
   }
   footer {
     height: 654px;
+    margin-top: 127px;
   }
   .footer__main-part {
-    width: 374px;
     height: 532px;
     align-content: flex-start;
     margin: 0 auto;
@@ -576,7 +575,6 @@
     grid-template: repeat(5, 24px) / 110.5px 158px 106.5px;
   }
   .footer__form {
-    width: 374px;
     height: 192px;
     margin-bottom: 31px;
     row-gap: normal;
@@ -586,9 +584,6 @@
   }
   .form__underlay {
     margin-bottom: 12px;
-  }
-  .form__underlay, .form__surface {
-    width: 374px;
   }
   .form__input {
     width: 313px;
@@ -622,5 +617,171 @@
   }
 }
 @media (max-width: 413px) {
-  
+  header {
+    padding: 0px 19px 0px 16px;
+  }
+  main {
+    width: 320px;
+    padding: 0px 16px;
+  }
+  .main__main-div {
+    padding-top: 16px;
+  }
+  .main__main-div, .article-content__specialist-statement, .article-content__men-image, .article-content__statement-repeat, .article-content__excercise, p + .article-content__image-advice img, ul + .article-content__image-advice img, .article-content__two-images-advices img, .article-content__hrs-lightning, .aside__window-load, .aside__psychologist {
+    width: 288px;
+  }
+  .main__top-part {
+    height: 352px;
+  }
+  .top-part__bread-crumbs {
+    width: 273px;
+  }
+  .main__top-part h1 {
+    font: 24px/32px "Montserrat-Bold";
+  }
+  .main__top-part > img {
+    width: 287px;
+    height: 160px;
+  }
+  .main__contents {
+    padding-top: 16px;
+  }
+  .main__contents > ul {
+    margin: 16px 0px;
+  }
+  .size24_height32_b:not(.aside__video-sessions span) {
+    font: 18px/26px "Montserrat-Bold";
+  }
+  .article-content__introduction {
+    margin: 8px 0px 40px 0px;
+  }
+  .article-content__introduction span:nth-of-type(3) {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .article-content__introduction span:nth-last-of-type(2) {
+    display: initial;
+  }
+  .article-content__introduction br:nth-last-of-type(3) {
+    display: none;
+  }
+  .article-content__what-else {
+    margin: 16px 0px 8px 0px;
+  }
+  .main__article-content ul li:first-child {
+    margin-bottom: 8px;
+  }
+  .article-content__men-image {
+    margin: 16px 0px 16px 0px;
+  }
+  .margin24_t_b {
+    margin: 16px 0px;
+  }
+  .article-content__statement-repeat {
+    padding: 8px 0px 0px 0px;
+    height: 176px;
+  }
+  .article-content__statement-repeat img {
+    right: 24.5px;
+  }
+  ul + .article-content__image-advice img {
+    height: 160px;
+  }
+  .article-content__two-images-advices img {
+    margin-bottom: 8px;
+  }
+  .article-content__two-images-advices p:nth-child(2) {
+    margin-bottom: 16px;
+  }
+  .article-content__excercise.teal {
+    margin-bottom: 16px;
+  }
+  .aside__window-load {
+    height: 509px;
+    padding: 24px;
+  }
+  .aside__window-load img {
+    width: 239px;
+    margin: 0px 0px 24px 0px;
+  }
+  .aside__window-load button {
+    padding: 12px 70.5px;
+  }
+  .aside__psychologist {
+    height: 484px;
+    padding: 24px 19px 36px 19px;
+  }
+  .aside__psychologist button {
+    padding: 12px 74px;
+  }
+  .aside__care img:nth-child(2) {
+    left: 32px;
+  }
+  .aside__care img:nth-child(3) {
+    bottom: -31px;
+    left: 142px;
+  }
+  .aside__care img:last-child {
+    right: -48px;
+  }
+  .aside__video-sessions {
+    height: 252px;
+    padding: 16px;
+  }
+  .aside__video-sessions picture:first-of-type img {
+    right: 25px;
+    bottom: -15px;
+  }
+  .aside__video-sessions picture:last-of-type img {
+    right: -17px;
+    bottom: -20px;
+  }
+  footer {
+    height: 724px;
+    padding: 35px 14px 37px 18px;
+    margin-top: 60px;
+  }
+  .footer__main-part {
+    width: 100%;
+    height: 506px;
+  }
+  footer nav {
+    margin: 0px auto 23px auto;
+  } 
+  .footer__nav-links {
+    grid-template: repeat(5, 24px) / 110.5px 71px 106.5px;
+  }
+  .footer__form {
+    margin-bottom: 5px;
+  }
+  .form__underlay, .form__surface, .form__input {
+    width: 288px;
+  }
+  .form__button {
+    display: none;
+  }
+}
+@media (max-width: 385px) {
+  label {
+    width: auto;
+  }
+}
+@media (max-width: 342px) {
+  footer {
+    height: 750px;
+  }
+  .footer__main-part {
+    height: 532px;
+  }
+  .footer__form {
+    height: 218px;
+  }
+  .form__surface {
+    top: 85px;
+  }
+}
+@media (max-width: 320px) {
+  label br {
+    display: block;
+  }
 }

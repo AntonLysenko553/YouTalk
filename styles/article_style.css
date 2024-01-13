@@ -220,7 +220,7 @@ main {
   background-image: url("../images/list_marker.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 20px;
+  padding-left: 24px;
 }
 .main__contents .contents__second-list-item_marker-position_top {
   background: none;
