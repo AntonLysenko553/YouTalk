@@ -46,6 +46,9 @@
   header, main {
     padding: 0px 25px;
   }
+  .top-part__bread-crumbs {
+    margin-left: 0;
+  }
   aside > img {
     right: -95px;
   }
@@ -110,7 +113,7 @@
   .main__contents > ul > li:first-child {
     margin-bottom: 8px;
   }
-  .main__contents > ul > li:nth-child(2), .main__contents > ul > li:nth-child(3), .article-content__introduction br:nth-child(-n+2), .main__article-content ul li:first-child br, .main__main-div figure + p br, p + .article-content__image-advice p br:not(:nth-last-child(2)), .article-content__image-advice + p br, .article-content__what-else + ul li:last-child br, ul + .article-content__image-advice p br {
+  .main__contents > ul > li:nth-child(2), .main__contents > ul > li:nth-child(3), .article-content__introduction br:nth-of-type(-n+2), .main__article-content ul li:first-child br, .main__main-div figure + p br, p + .article-content__image-advice p br:not(:nth-last-child(2)), .article-content__image-advice + p br, .article-content__what-else + ul li:last-child br, ul + .article-content__image-advice p br {
     display: none;
   }
   .article-content__introduction {
@@ -120,13 +123,14 @@
     padding: 34px 47px 24px 24px;
   }
   .article-content__specialist-statement img {
-    width: 71px;
-    height: 36px;
-    top: 23px;
-    left: 15px;
+    top: -12px;
+    left: -2px;
   }
   .article-content__statement-repeat {
     padding: 24px 127px 48px 102px;
+  }
+  .article-content__statement-repeat img {
+    right: 237.5px;
   }
   .article-content__two-images-advices {
     grid-template: 235px 192px / 345px 345px;
@@ -170,9 +174,6 @@
     text-indent: 0;
     padding-left: 4px;
   }
-  .aside__psychologist ul li:nth-child(2) {
-    margin: 8px 0px 16px 0px;
-  }
   .aside__psychologist button {
     padding: 12px 37.5px;
   }
@@ -197,17 +198,16 @@
   .aside__video-sessions p {
     width: 174px;
   }
-  .aside__video-sessions img:nth-last-child(2) {
-    width: 88px;
-    height: 107px;
-    right: 8px;
-    bottom: -19px;
+  .aside__video-sessions a {
+    z-index: 1;
   }
-  .aside__video-sessions img:last-child {
-    width: 108px;
-    height: 123px;
-    right: -35px;
-    bottom: -52px;
+  .aside__video-sessions picture:first-of-type img {
+    right: 3px;
+    bottom: -29px;
+  }
+  .aside__video-sessions picture:last-of-type img {
+    right: -40px;
+    bottom: -42px;
   }
   aside > img {
     display: none;
@@ -219,6 +219,9 @@
 @media (min-width: 1024px) and (max-width: 1060px) {
   .aside__window-load img {
     height: 145px;
+  }
+  .aside__psychologist ul li:nth-child(2) {
+    margin: 8px 0px 16px 0px;
   }
 }
 @media (max-width: 1023px) {
@@ -241,9 +244,6 @@
   .main__main-div, .article-content__specialist-statement, .article-content__men-image, .article-content__statement-repeat, .article-content__excercise {
     width: 728px;
   }
-  .main__contents {
-    padding-top: 12px;
-  }
   .main__contents > ul {
     margin: 16px 0px 36px 0px;
   }
@@ -251,12 +251,14 @@
     padding: 24px;
   }
   .article-content__specialist-statement img {
-    width: 60px;
-    top: 13px;
-    left: 21px;
+    top: -12px;
+    left: -1px;
   }
   .article-content__statement-repeat {
     padding: 24px 141px 48px 102px;
+  }
+  .article-content__statement-repeat img {
+    right: 244.5px;
   }
   p + .article-content__image-advice img {
     width: 294px;
@@ -297,9 +299,6 @@
     width: 257px;
     margin: 0px auto 24px auto;
   }
-  .aside__window-load h3 {
-    margin-bottom: 8px;
-  }
   .aside__window-load button {
     padding: 12px 105.5px;
   }
@@ -310,7 +309,7 @@
     margin: 0;
   }
   .aside__psychologist ul li:nth-child(2) {
-    margin: 8px 0px 8px 0px;
+    margin: 8px 0px;
   }
   .aside__psychologist button {
     padding: 12px 75px;
@@ -346,15 +345,13 @@
   .aside__video-sessions p {
     width: auto;
   }
-  .aside__video-sessions img:nth-last-child(2) {
-    width: 112px;
-    height: 106px;
-    right: 85px;
+  .aside__video-sessions picture:first-of-type img {
+    right: -16px;
+    bottom: -10px;
   }
-  .aside__video-sessions img:last-child {
-    width: 137px;
-    height: 121px;
-    right: 36px;
+  .aside__video-sessions picture:last-of-type img {
+    right: -70px;
+    bottom: -21px;
   }
   footer {
     height: 455px;
@@ -379,6 +376,14 @@
     margin: 27px 0px 16px 0px;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__contents {
+    padding-top: 12px;
+  }
+  .aside__window-load h3 {
+    margin-bottom: 8px;
+  }
+}
 @media (max-width: 782px) {
   main {
     width: 753px;
@@ -387,4 +392,235 @@
   .footer__main-part {
     column-gap: 16px;
   }
+}
+@media (max-width: 767px) {
+  header {
+    padding: 0px 35px 0px 24px;
+  }
+  main {
+    width: 414px;
+    padding: 0px 20px;
+  }
+  .main__main-div, .main__top-part > img, .article-content__specialist-statement, .article-content__men-image, .article-content__statement-repeat, .article-content__excercise {
+    width: 374px;
+  }
+  .main__main-div {
+    padding-top: 12px;
+  }
+  .main__top-part {
+    height: 422px;
+  }
+  .top-part__bread-crumbs {
+    display: inline-block;
+    width: 363px;
+    height: 17px;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .top-part__bread-crumbs, .top-part__bread-link {
+    font: 12px "Montserrat-Regular";
+  }
+  .top-part__bread-left, .top-part__bread-center {
+    display: initial;
+  }
+  .top-part__bread-crumbs span:not(:last-child) {
+    margin-right: 14.4px;
+  }
+  .top-part__bread-crumbs a {
+    margin-right: 9.6px;
+    margin-bottom: 0;
+  }
+  .top-part__bread-crumbs img {
+    margin-bottom: -2px;
+  }
+  .main__top-part h1 {
+    font: 32px/40px "Montserrat-Bold";
+    margin: 32px 0px 8px 0px;
+  }
+  .main__top-part h1 br {
+    display: none;
+  }
+  .top-part__author-date {
+    margin-bottom: 16px;
+  }
+  .main__top-part > img {
+    height: 207px;
+  }
+  .main__contents > ul {
+    margin: 16px 0px 24px 0px;
+  }
+  .article-content__introduction span:nth-last-of-type(2) {
+    display: block;
+    margin-top: 16px;
+  }
+  .article-content__introduction br:nth-last-of-type(-n+2) {
+    display: none;
+  }
+  .article-content__specialist-statement {
+    padding: 26px 16px 16px 16px;
+  }
+  .article-content__specialist-statement img {
+    left: 0px;
+  }
+  .article-content__men-image {
+    height: 207px;
+  }
+  .article-content__statement-repeat {
+    padding: 24px 0px 0px 0px;
+  }
+  .article-content__statement-repeat img {
+    right: 67.5px;
+  }
+  .article-content__image-advice {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  p + .article-content__image-advice img {
+    width: 374px;
+  }
+  .article-content__excercise {
+    padding: 16px;
+  }
+  ul + .article-content__image-advice img {
+    width: 374px;
+    height: 207px;
+  }
+  .article-content__two-images-advices {
+    display: flex;
+    flex-direction: column;
+    row-gap: normal;
+  }
+  .article-content__two-images-advices img {
+    width: 374px;
+    margin-bottom: 16px;
+  }
+  .article-content__two-images-advices p:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  .article-content__hrs-lightning {
+    width: 374px;
+  }
+  .article-content__excercise.teal {
+    margin-bottom: 56px;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .aside__window-load {
+    width: 374px;
+    height: 509px;
+    padding: 24px 32px 44px 32px;
+  }
+  .aside__psychologist {
+    width: 374px;
+    height: 484px;
+    padding: 24px 62px 36px 62px;
+  }
+  .aside__psychologist ul {
+    margin: 8px 0px 20px 0px;
+  }
+  .aside__psychologist button {
+    padding: 12px 74.5px;
+  }
+  .aside__care {
+    height: 292px;
+    background-size: 75% 66%;
+  }
+  .aside__care img:nth-child(2) {
+    bottom: -29px;
+    left: 31px;
+  }
+  .aside__care img:nth-child(3) {
+    bottom: -32px;
+    left: 141px;
+  }
+  .aside__care img:last-child {
+    right: 39px;
+    bottom: -36px;
+  }
+  .aside__video-sessions {
+    height: 250px;
+    padding: 24px;
+  }
+  .aside__video-sessions p br:nth-child(2) {
+    display: block;
+  }
+  .aside__video-sessions picture:first-of-type img {
+    right: 42px;
+    bottom: -30px;
+  }
+  .aside__video-sessions picture:last-of-type img {
+    right: -12px;
+    bottom: -41px;
+  }
+  footer {
+    height: 654px;
+  }
+  .footer__main-part {
+    width: 374px;
+    height: 532px;
+    align-content: flex-start;
+    margin: 0 auto;
+    row-gap: normal;
+  }
+  footer nav {
+    height: 184px;
+    margin-bottom: 23px;
+    width: auto;
+  }
+  .footer__nav-links {
+    grid-template: repeat(5, 24px) / 110.5px 158px 106.5px;
+  }
+  .footer__form {
+    width: 374px;
+    height: 192px;
+    margin-bottom: 31px;
+    row-gap: normal;
+  }
+  label {
+    margin-bottom: 8px;
+  }
+  .form__underlay {
+    margin-bottom: 12px;
+  }
+  .form__underlay, .form__surface {
+    width: 374px;
+  }
+  .form__input {
+    width: 313px;
+  }
+  .form__button {
+    padding: 10.3px 17.5px;
+  }
+  .footer__social {
+    height: 102px;
+  }
+  .footer__bottom-part {
+    width: 100%;
+  }
+}
+@media (max-width: 610px) {
+  footer {
+    height: 736px;
+  }
+  footer hr {
+    border-bottom: 1px solid #9D9D9D;
+    margin: 20px 0px 20px 0px;
+  }
+  .footer__bottom-part {
+    flex-direction: column;
+  }
+  .footer__bottom-part p {
+    margin-bottom: 24px;
+  }
+  .footer__bottom-part a:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 413px) {
+  
 }

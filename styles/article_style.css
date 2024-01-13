@@ -157,7 +157,7 @@ main {
   display: flex;
   column-gap: 9.6px;
 }
-.top-part__bread-link, .top-part__bread-crumbs {
+.top-part__bread-crumbs, .top-part__bread-link {
   font: 13.6px "Montserrat-Regular";
   color: #333333B3;
   letter-spacing: 0.25px;
@@ -260,8 +260,8 @@ main {
 }
 .article-content__specialist-statement img {
   position: absolute;
-  top: 24px;
-  left: 23px;
+  top: -11px;
+  left: -1px;
 }
 .article-content__specialist-statement p:nth-child(2) {
   font: 16px/24px "Montserrat-Italic";
@@ -588,6 +588,9 @@ figure h4 {
   font: 14px/20px "OpenSans-Regular";
   color: #011632;
 }
+.aside__video-sessions p br:nth-child(2) {
+  display: none;
+}
 .aside__video-sessions a {
   width: 108px;
 }
@@ -599,22 +602,16 @@ figure h4 {
   cursor: pointer;
   padding: 12px 23px;
 }
-.aside__video-sessions img:nth-last-child(2) {
+.aside__video-sessions picture:first-of-type img {
   position: absolute;
-  width: 112px;
-  height: 125px;
-  object-fit: cover;
-  right: 2px;
-  bottom: -21px;
+  right: 4px;
+  bottom: -37px;
 }
-.aside__video-sessions img:last-child {
+.aside__video-sessions picture:last-of-type img {
   position: absolute;
-  width: 137px;
-  height: 121px;
-  object-fit: contain;
   z-index: 1;
-  right: -51px;
-  bottom: -47px;
+  right: -50px;
+  bottom: -49px;
 }
 aside > img {
   right: -260px;

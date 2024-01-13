@@ -137,7 +137,7 @@ main {
   display: flex;
   column-gap: 9.6px;
 }
-.top-part__bread-link, .top-part__bread-crumbs {
+.top-part__bread-crumbs, .top-part__bread-link {
   font: 13.6px "Montserrat-Regular";
   color: #333333B3;
   letter-spacing: 0.25px;
