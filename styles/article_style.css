@@ -823,7 +823,49 @@ footer hr {
 .footer__bottom-part a {
   text-decoration: none;
 }
+@media (hover: hover) {
+  .header__button:hover {
+    background-color: #BFF3F3;
+  }
+  .aside__window-load button:hover, .aside__psychologist button:hover, .aside__video-sessions button:hover, .body__psychologist-suggestion button:hover {
+    background-color: #44D8CC;
+  }
+  .form__button:hover {
+    background-color: #11ECDE;
+  }
+  .form__law:hover, .form__pp:hover {
+    text-decoration: underline;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
+  .header__button:hover {
+    background-color: #BFF3F3;
+  }
+  .aside__window-load button:hover, .aside__psychologist button:hover, .aside__video-sessions button:hover, .body__psychologist-suggestion button:hover {
+    background-color: #44D8CC;
+  }
+  .form__button:hover {
+    background-color: #11ECDE;
+  }
+  .form__law:hover, .form__pp:hover {
+    text-decoration: underline;
+  }
+}
+@media (any-hover: hover) {
+  .header__button:hover {
+    background-color: #BFF3F3;
+  }
+  .aside__window-load button:hover, .aside__psychologist button:hover, .aside__video-sessions button:hover, .body__psychologist-suggestion button:hover {
+    background-color: #44D8CC;
+  }
+  .form__button:hover {
+    background-color: #11ECDE;
+  }
+  .form__law:hover, .form__pp:hover {
+    text-decoration: underline;
+  }
+}
+@media (any-hover: hover) and (any-pointer: fine) {
   .header__button:hover {
     background-color: #BFF3F3;
   }

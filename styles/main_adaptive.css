@@ -1,4 +1,151 @@
+@media (hover: none) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
+@media (any-hover: none) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
+@media (hover: none) and (pointer: none) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
 @media (hover: none) and (pointer: coarse) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
+@media (hover: none) and (pointer: fine) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
+@media (any-hover: none) and (any-pointer: none) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
+@media (any-hover: none) and (any-pointer: coarse) {
+  .header__button:active {
+    background-color: #BFF3F3;
+  }
+  .top-part__categories-list li:not(:nth-child(3)):active {
+    outline-color: #2963A3;
+  }
+  .main__middle-part article:active {
+    outline: 2px solid #16C8BB;
+    border-radius: 16px;
+  }
+  .main__button:active {
+    background-color: #44D8CC;
+  }
+  .form__button:active {
+    background-color: #11ECDE;
+  }
+  .form__law, .form__pp {
+    text-decoration: underline;
+  }
+}
+@media (any-hover: none) and (any-pointer: fine) {
   .header__button:active {
     background-color: #BFF3F3;
   }
