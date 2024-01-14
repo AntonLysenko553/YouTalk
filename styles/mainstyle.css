@@ -489,27 +489,6 @@ footer hr {
 .footer__bottom-part a {
   text-decoration: none;
 }
-@media (hover: hover) {
-  .header__button:hover {
-    background-color: #BFF3F3;
-  }
-  .top-part__categories-list li:not(:nth-child(3)):hover {
-    outline-color: #2963A3;
-  }
-  .main__middle-part article:hover {
-    outline: 2px solid #16C8BB;
-    border-radius: 16px;
-  }
-  .main__button:hover {
-    background-color: #44D8CC;
-  }
-  .form__button:hover {
-    background-color: #11ECDE;
-  }
-  .form__law:hover, .form__pp:hover {
-    text-decoration: underline;
-  }
-}
 @media (hover: hover) and (pointer: fine) {
   .header__button:hover {
     background-color: #BFF3F3;

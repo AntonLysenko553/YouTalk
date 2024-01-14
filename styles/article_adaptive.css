@@ -1,17 +1,3 @@
-@media (hover: none) {
-  .header__button:active {
-    background-color: #BFF3F3;
-  }
-  .aside__window-load button:active, .aside__psychologist button:active, .aside__video-sessions button:active, .body__psychologist-suggestion button:active {
-    background-color: #44D8CC;
-  }
-  .form__button:active {
-    background-color: #11ECDE;
-  }
-  .form__law, .form__pp {
-    text-decoration: underline;
-  }
-}
 @media (hover: none) and (pointer: none) {
   .header__button:active {
     background-color: #BFF3F3;
