@@ -167,8 +167,8 @@
   .middle-part__woman-burnout .card-info__description::after {
     content: "...";
     position: relative;
-    right: -95px;
     top: -19px;
+    right: -95px;
   }
 }
 @media(min-width: 1440px) and (max-width: 1608px) {
@@ -182,8 +182,8 @@
   }
   .middle-part__woman-burnout .card-info__description::after {
     position: absolute;
-    right: -1px;
     top: 1px;
+    right: -1px;
   }
 }
 @media (max-width: 1522px) {
@@ -204,8 +204,8 @@
   .middle-part__girl-burnout .card-info__description::after {
     content: "...";
     position: relative;
+    top: -19px;
     right: -211px;
-    top: -19px
   }
 }
 @media (min-width: 1441px) and (max-width: 1483px) {
@@ -330,8 +330,11 @@
   .main__middle-part article:not(:nth-child(-n+2)) a > img {
     height: 206px;
   }
-  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap, .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
+  .middle-part__girl-burnout .card-info__wrapper_supersmall-gap {
     row-gap: 26px;
+  }
+  .middle-part__woman-burnout .card-info__wrapper_supersmall-gap {
+    row-gap: 6px;
   }
   .card-info__wrapper_big-gap {
     row-gap: 39px;
@@ -353,6 +356,22 @@
   }
   .main__middle-part .card-info__editorial, .main__middle-part .card-info__editorial + span {
     display: none;
+  }
+  .middle-part__girl-burnout .card-info__description::after {
+    content: "...";
+    position: relative;
+    top: -39px;
+    right: -142px;
+  }
+  .middle-part__woman-burnout .card-info__description {
+    height: 60px;
+    overflow: hidden;
+  }
+  .middle-part__woman-burnout .card-info__description::after {
+    content: "...";
+    position: relative;
+    top: -19px;
+    right: -109px;
   }
 }
 @media (min-width: 768px) and (max-width: 1270px) {
@@ -501,7 +520,11 @@
     width: auto;
   }
   .middle-part__girl-burnout .card-info__description::after, .middle-part__woman-burnout .card-info__description::after {
-    right: 13px;
+    top: -19px;
+    right: -211px;
+  }
+  .middle-part__woman-burnout .card-info__description {
+    height: 40px;
   }
   .middle-part__swim-fears {
     grid-column: 3;
@@ -658,7 +681,7 @@
     overflow: visible;
   }
   .middle-part__girl-burnout .card-info__description::after {
-    content: "";
+    content: normal;
   }
   .card-info__wrapper_small-gap {
     row-gap: 45px;
